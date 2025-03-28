@@ -1,0 +1,8 @@
+name = "monzo-mcp"
+main = "src/index.ts"
+compatibility_date = "2025-03-28"
+
+[vars]
+MONZO_TOKEN = "your token"
+MONZO_USER_ID = "your user id"
+OPENAI_API_KEY = "your api key"

@@ -1,0 +1,12 @@
+{
+  "name": "monzo-chat",
+  "version": "1.0.0",
+  "scripts": {
+    "build:worker": "cd worker && tsc",
+    "deploy:worker": "cd worker && wrangler deploy",
+    "build:frontend": "cd frontend && npm run build",
+    "deploy:frontend": "cd frontend && wrangler pages deploy out --project-name monzo-chat",
+    "deploy": "npm run build:worker && npm run deploy:worker && npm run build:frontend && npm run deploy:frontend"
+  },
+  "dependencies": {}
+}
